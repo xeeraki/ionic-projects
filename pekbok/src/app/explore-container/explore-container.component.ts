@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-explore-container',
@@ -8,8 +10,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ExploreContainerComponent implements OnInit {
   @Input() name: string;
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  
 
   ngOnInit() {}
 
+
+  detailsPage(){
+    this.router.navigate(['/card-details'])
+  }
 }
