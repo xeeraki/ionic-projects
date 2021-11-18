@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class CardDetailsPage implements OnInit {
 
   constructor() { }
-
+questions: Array<any> = [1,2,3,4];
   ngOnInit() {
   }
+
+
 
 }
