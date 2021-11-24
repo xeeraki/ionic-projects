@@ -20,4 +20,8 @@ export class ExploreContainerComponent implements OnInit {
   detailsPage(){
     this.router.navigate(['/card-details'])
   }
+
+  detailsPage2(){
+    this.router.navigate(['/card-details2'])
+  }
 }
